@@ -12,7 +12,7 @@ from keras.layers import Input,Dense
 from keras.models import Model
 from keras.datasets import mnist
 
-(x_train, y_tain),(x_test,y_test) = mnist.load_data()
+(x_train, y_train),(x_test,y_test) = mnist.load_data()
 one_hot_y = keras.utils.to_categorical(y_train)
 x = x_train.reshape((60000,784))
 inp = Input(shape=(784,))
